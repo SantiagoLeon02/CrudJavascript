@@ -7,15 +7,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 80px; */
     padding-top: 100px;
-    /* margin: 0 auto; */
-
 }
 
 
 .content{
-    width: 450px;
+    min-width: 1080px;;
     height: auto;
     display: flex;
     justify-content: center;
@@ -25,7 +22,7 @@ body{
 }
 
 .card-taks{
-    width: 560px;
+    width: 580px;
     height: 20vh;
     background-color: #ffffff;
     border: 2px #ffffff solid;
@@ -56,17 +53,13 @@ body{
 input{
     width: 350px;
     height: 35px;
-    /* border:2px #ffffff solid; */
     border-radius: 10px;
     padding: 0px 16px;
-    /* background: none; */
-    
 }
 
 .btn-addTask{
     padding: 5px 5px;
     background-color: #2ecc71;
-    /* background: none; */
     font-size: 16px;
     border:none ;
     border-radius: 15px;
