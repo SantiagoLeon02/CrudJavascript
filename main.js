@@ -9,6 +9,9 @@ function mostrarTarea(){
     ul.innerHTML = '';
     datos.forEach((dato,index) =>{
         const li = document.createElement('li');
+        const p = document.createElement('p');
+        const div = document.createElement('div');
+        div.className="button-style";
         
         const remove = document.createElement('button');
         remove.textContent ="Eliminar";
@@ -18,23 +21,27 @@ function mostrarTarea(){
         const edit = document.createElement('button');
         edit.textContent = "Editar"
         edit.className = "btn btn-edit";
-        edit.addEventListener('click', editTask);
+        edit.addEventListener('click',() => editTask(index));
         
-        li.textContent = dato;
-        li.appendChild(edit);
-        li.appendChild(remove);
+        p.textContent = dato;
+        div.appendChild(edit);
+        div.appendChild(remove);
+        li.appendChild(p);
+        li.appendChild(div);
         ul.appendChild(li);
     })
 }
 
 function addTask(){
     const task = document.getElementById('task');
-    const valor = task.value;
+    const valor = task.value.trim();
 
     if(valor.trim() !== ''){
         datos.push(valor);
+        mostrarTarea();
+        task.value='';
+
     }
-    mostrarTarea();
 }
 
 function removetask(index){
@@ -43,11 +50,28 @@ function removetask(index){
     mostrarTarea();
 }
 
-function editTask(){
-    console.log("Se edto la tarea");
+function editTask(index){
+    const ul = document.getElementById('list-tasks');
+    const li = ul.children[index];
+
+    const input = document.createElement('input');
+    input.type = "text";
+    input.value = datos[index];
+
+    const saveBtn = document.createElement('button');
+    saveBtn.textContent = "Guardar";
+    saveBtn.className = "btn btn-saveTask";
+    
+    li.innerHTML='';
+    li.appendChild(input);
+    li.appendChild(saveBtn);
+
+    saveBtn.addEventListener('click',()=>{
+        datos[index] = input.value;
+        mostrarTarea();
+    });
 }
 
-// mostrarTarea();
 addButtonTask.addEventListener('click', addTask);
 
 

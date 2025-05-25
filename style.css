@@ -1,0 +1,155 @@
+body{
+    background-color: #252525;
+}
+.section-uno{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 80px; */
+    padding-top: 100px;
+    /* margin: 0 auto; */
+
+}
+
+
+.content{
+    width: 450px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-taks{
+    width: 560px;
+    height: 20vh;
+    background-color: #ffffff;
+    border: 2px #ffffff solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0px 12px;
+    gap: 5px;
+}
+
+.card-taks h1{
+    text-align: center;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.elements-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+input{
+    width: 350px;
+    height: 35px;
+    /* border:2px #ffffff solid; */
+    border-radius: 10px;
+    padding: 0px 16px;
+    /* background: none; */
+    
+}
+
+.btn-addTask{
+    padding: 5px 5px;
+    background-color: #2ecc71;
+    /* background: none; */
+    font-size: 16px;
+    border:none ;
+    border-radius: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+/* ESTILOS DE LOS ITEMS */
+.card-items{
+    width: 590px;
+    height: auto;
+    background-color: #ffffff;
+    border: 2px #ffffff solid;
+    border-radius: 10px;
+}
+
+.card-items ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 8px;
+}
+.card-items ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px #252525 solid;
+}
+
+
+
+.card-items ul li p{
+    padding: 0px 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.button-style{
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 15px;
+}
+
+.button-style .btn{
+    padding: 5px 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.button-style .btn-remove{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: #e74c3c;
+}
+.button-style .btn-edit{
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #eb984e;
+}
+
+/* 
+    Este estilo se aplica para todos los li ya que el que tengo en el javascript de la 
+    opcion de editar no se aplican 
+ */
+
+li{
+    padding: 0px 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold; 
+}
+
+.btn-saveTask{
+    padding: 5px 5px;
+    background-color: #2ecc71;
+    font-size: 16px;
+    border:none ;
+    border-radius: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+

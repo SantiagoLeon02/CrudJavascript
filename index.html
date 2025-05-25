@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD con HTML, CSS y JavaScript</title>
 </head>
 <body>
-    <h1>Añada una tarea</h1>
-    <input type="text" id="task">
-    <button id="add-button">añadir tarea</button>
-    <ul id="list-tasks">
+    <main>
+        <section class="section-uno">
+            <div class="content">
+                <div class="card-taks">
+                    <h1>Añada una tarea</h1>
+                    <div class="elements-task">
+                        <input class="input input-task" type="text" id="task">
+                        <button class="btn btn-addTask" id="add-button">añadir tarea</button>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <ul id="list-tasks">
 
-    </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
