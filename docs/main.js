@@ -73,6 +73,11 @@ function editTask(index){
 }
 
 addButtonTask.addEventListener('click', addTask);
+document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Enter'){
+        addTask();
+    }
+})
 
 
 
